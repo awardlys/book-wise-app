@@ -17,9 +17,15 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        sign: "url('/src/assets/logo.png')",
+      },
+      backdropFilter: {
+        blur: "blur(1px)",
+      },
       gridTemplateColumns: {
         app: "20%  1fr 30%",
-        sign: "40%  1fr",
+        sign: "30%  1fr",
       },
       colors: {
         border: "hsl(var(--border))",

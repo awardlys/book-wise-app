@@ -77,3 +77,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+.text-logo {
+  background: var(
+    --Gradient-Horizontal,
+    linear-gradient(90deg, #7fd1cc 0%, #9694f5 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
