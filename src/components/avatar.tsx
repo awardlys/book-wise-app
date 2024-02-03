@@ -1,4 +1,5 @@
 import { formatDistanceToNow } from "date-fns";
+import { format } from "date-fns/format";
 import { ptBR } from "date-fns/locale/pt-BR";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
@@ -22,7 +23,12 @@ export function AvatarPost({ dateUp, name, img }: Readonly<AvatarPostProps>) {
       </Avatar>
       <div>
         <p>{name}</p>
-        <time className="text-sm text-muted-foreground ">{date}</time>
+        <time
+          title={format(dateUp, "PPPP", { locale: ptBR })}
+          className="text-sm text-muted-foreground "
+        >
+          {date}
+        </time>
       </div>
     </div>
   );

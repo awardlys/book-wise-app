@@ -87,3 +87,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0;
+}

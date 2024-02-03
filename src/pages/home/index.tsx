@@ -8,11 +8,11 @@ export function Home() {
         <GoGraph color="#50B2C0" className="h-6 w-6" />
         <h2 className="text-xl">Início</h2>
       </div>
-      <div className="flex flex-col gap-2">
-        <p className="text-sm mb-2">Avaliações mais recentes</p>
-        <Post />
-        <Post />
-        <Post />
+      <p className="text-sm mb-2">Avaliações mais recentes</p>
+      <div className="flex flex-col gap-4 max-h-[78vh] overflow-x-hidden custom-scrollbar ">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <Post key={i} />
+        ))}
       </div>
     </div>
   );
