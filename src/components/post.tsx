@@ -4,7 +4,7 @@ import { Rating } from "./rating";
 
 export function Post() {
   return (
-    <div className="flex-col flex w-full bg-muted p-6 rounded-md gap-8">
+    <div className="flex-col flex w-full dark:bg-muted bg-gray-300 p-6 rounded-md gap-8">
       <div className="flex justify-between">
         <AvatarPost
           name="Jaxson Dias"
