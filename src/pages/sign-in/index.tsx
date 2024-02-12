@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { FcGoogle } from "react-icons/fc";
 import { PiRocketLaunchBold } from "react-icons/pi";
 import { VscGithubInverted } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 export function SignIn() {
   return (
@@ -11,19 +12,20 @@ export function SignIn() {
         <p className="text-sm">Faça seu login ou acesse como visitante.</p>
       </div>
       <div className="flex flex-col gap-4 w-1/3">
-        <Button className="h-14 flex gap-4 text-md bg-muted text-accent-foreground dark:hover:bg-slate-700 hover:bg-slate-300">
-          {" "}
+        <Button variant={"sign"} size={"sign"}>
           <FcGoogle className="h-8 w-8" />
-          Entrar com Google
+          <span>Entrar com Google</span>
         </Button>
-        <Button className="h-14 flex gap-4 text-md bg-muted text-accent-foreground dark:hover:bg-slate-700 hover:bg-slate-300">
-          {" "}
-          <VscGithubInverted className="h-8 w-8" /> Entrar com GitHub
+        <Button variant={"sign"} size={"sign"}>
+          <VscGithubInverted className="h-8 w-8" />
+          <span>Entrar com GitHub</span>
         </Button>
-        <Button className="h-14 flex gap-4 text-md bg-muted text-accent-foreground  dark:hover:bg-slate-700 hover:bg-slate-300">
-          {" "}
-          <PiRocketLaunchBold className="h-8 w-8" /> Acessar como visitante
-        </Button>
+        <Link to={"/home"}>
+          <Button variant={"sign"} size={"sign"}>
+            <PiRocketLaunchBold className="h-8 w-8" />
+            <span>Acessar como visitante</span>
+          </Button>
+        </Link>
       </div>
     </>
   );

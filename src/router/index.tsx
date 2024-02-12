@@ -1,3 +1,4 @@
+import { Explorer } from "@/pages/explorer";
 import { Home } from "@/pages/home";
 import { LayoutHome } from "@/pages/layout/layout-home";
 import { LayoutSignIn } from "@/pages/layout/layout-sign-in";
@@ -22,6 +23,16 @@ export const router = createBrowserRouter([
       {
         path: "/home",
         element: <Home />,
+      },
+    ],
+  },
+  {
+    path: "/explorer",
+    element: <LayoutHome />,
+    children: [
+      {
+        path: "/explorer",
+        element: <Explorer />,
       },
     ],
   },
