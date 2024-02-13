@@ -24,7 +24,7 @@ module.exports = {
         blur: "blur(1px)",
       },
       gridTemplateColumns: {
-        app: "15% 1fr 30%",
+        app: "15% 1fr",
         sign: "30%  1fr",
       },
       colors: {

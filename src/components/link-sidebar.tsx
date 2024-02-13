@@ -25,3 +25,4 @@ export function LinkSidebar({
     </Link>
   );
 }
+LinkSidebar.displayName = "Sidebar";

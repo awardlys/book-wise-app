@@ -8,7 +8,7 @@ import { Button } from "./ui/button";
 export function Sidebar() {
   const { pathname } = useLocation();
   return (
-    <aside className="flex flex-col justify-between h-[95vh] pt-10 pb-4 items-center dark:bg-gradient-to-tl rounded-lg dark:from-green-950 dark:via-gray-900 dark:to-purple-950 bg-gradient-to-tr from-green-500 via-gray-500 to-purple-700">
+    <aside className="flex flex-col justify-between h-[calc(100vh-2rem)] pt-10 pb-4 items-center dark:bg-gradient-to-tl rounded-lg dark:from-green-950 dark:via-gray-900 dark:to-purple-950 bg-gradient-to-tr from-green-500 via-gray-500 to-purple-700">
       <div className="flex flex-col items-center justify-center gap-20">
         <Logo variant={"home"} size={30} />
         <div className="flex flex-col gap-6">
