@@ -1,9 +1,9 @@
 import { GoGraph } from "react-icons/go";
 import { LuLogIn } from "react-icons/lu";
 import { useLocation } from "react-router-dom";
+import { Logo } from "../logo";
+import { Button } from "../ui/button";
 import { LinkSidebar } from "./link-sidebar";
-import { Logo } from "./logo";
-import { Button } from "./ui/button";
 
 export function Sidebar() {
   const { pathname } = useLocation();
