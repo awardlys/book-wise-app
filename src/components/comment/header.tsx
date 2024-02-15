@@ -1,11 +1,8 @@
-import { DataPostProps } from "@/assets/data";
+import { HeaderProps } from "@/@types";
 import { AvatarPost } from "../avatar";
 import { Rating } from "../rating";
 import { TimeDistance } from "../time-distance";
 
-interface HeaderProps {
-  data: Pick<DataPostProps, "user" | "dateUp" | "imgUser">;
-}
 export function Header({
   data: { user, dateUp, imgUser },
 }: Readonly<HeaderProps>) {

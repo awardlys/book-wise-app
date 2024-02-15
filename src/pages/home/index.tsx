@@ -16,7 +16,7 @@ export function Home() {
         <div className="h-[calc(100vh-8rem)] overflow-x-hidden custom-scrollbar rounded-md">
           <div className="flex flex-col gap-4">
             {DataPost.map((item) => (
-              <Comment hasHeader data={item} key={window.crypto.randomUUID()} />
+              <Comment data={item} key={window.crypto.randomUUID()} />
             ))}
           </div>
         </div>
@@ -35,6 +35,7 @@ export function Home() {
           <div className="flex flex-col gap-4 last:mb-4">
             {DataPost.map((item) => (
               <Comment
+                hasHeader={false}
                 isCardBook
                 data={item}
                 key={window.crypto.randomUUID()}
