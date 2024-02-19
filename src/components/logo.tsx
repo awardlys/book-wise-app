@@ -3,7 +3,7 @@ import { VariantProps, cva } from "class-variance-authority";
 import { ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";
 
-const logoVariants = cva("flex items-center justify-center", {
+const logoVariants = cva("flex items-center justify-center select-none", {
   variants: {
     variant: {
       sign: "absolute gap-4 text-4xl font-bold",

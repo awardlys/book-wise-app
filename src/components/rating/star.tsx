@@ -12,7 +12,7 @@ export function Star({ isActive, onClick }: Readonly<StarProps>) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 576 512"
-        fill={isActive ? "#8381D9" : "#ccc"}
+        fill={isActive ? "#be88ff" : "#38226f"}
         width={16}
         height={16}
       >

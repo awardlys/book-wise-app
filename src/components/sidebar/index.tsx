@@ -8,7 +8,7 @@ import { LinkSidebar } from "./link-sidebar";
 export function Sidebar() {
   const { pathname } = useLocation();
   return (
-    <aside className="flex flex-col justify-between h-[calc(100vh-2rem)] pt-10 pb-4 items-center dark:bg-gradient-to-tl rounded-lg dark:from-green-950 dark:via-gray-900 dark:to-purple-950 bg-gradient-to-tr from-green-500 via-gray-500 to-purple-700">
+    <aside className="flex flex-col justify-between h-[calc(100vh-2rem)] pt-10 pb-4 items-center dark:bg-gradient-to-tl rounded-lg dark:from-green-950 dark:via-gray-900 dark:to-purple-950 bg-gray-300">
       <div className="flex flex-col items-center justify-center gap-20">
         <Logo variant={"home"} size={30} />
         <div className="flex flex-col gap-6">
@@ -16,19 +16,19 @@ export function Sidebar() {
             to={"/home"}
             name="Início"
             current={pathname}
-            icon={<GoGraph className="h-4 w-4 fill-accent-foreground" />}
+            icon={GoGraph}
           />
           <LinkSidebar
             to={"/explorer"}
             name="Explorer"
             current={pathname}
-            icon={<GoGraph className="h-4 w-4 fill-accent-foreground" />}
+            icon={GoGraph}
           />
         </div>
       </div>
       <Button className="flex gap-2 items-center" variant={"ghost"}>
         <LuLogIn />
-        <span> Fazer login</span>
+        <span>Fazer login</span>
       </Button>
     </aside>
   );

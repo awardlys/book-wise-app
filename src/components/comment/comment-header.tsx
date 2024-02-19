@@ -1,10 +1,15 @@
-import { HeaderProps } from "@/@types";
+import { DataPostProps } from "@/assets/data";
 import { AvatarPost } from "../avatar";
 import { Rating } from "../rating";
 import { TimeDistance } from "../time-distance";
 
-export function Header({
+interface HeaderProps {
+  data: Pick<DataPostProps, "user" | "dateUp" | "imgUser">;
+  hasRating?: boolean;
+}
+export function CommentHeader({
   data: { user, dateUp, imgUser },
+  hasRating = false,
 }: Readonly<HeaderProps>) {
   return (
     <div className="flex justify-between">
@@ -15,7 +20,7 @@ export function Header({
           <TimeDistance dateUp={dateUp} />
         </div>
       </div>
-      <Rating />
+      {hasRating && <Rating />}
     </div>
   );
 }

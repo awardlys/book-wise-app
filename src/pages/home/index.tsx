@@ -16,7 +16,10 @@ export function Home() {
         <div className="h-[calc(100vh-8rem)] overflow-x-hidden custom-scrollbar rounded-md">
           <div className="flex flex-col gap-4">
             {DataPost.map((item) => (
-              <Comment data={item} key={window.crypto.randomUUID()} />
+              <Comment.Root key={window.crypto.randomUUID()}>
+                <Comment.Header data={item} hasRating />
+                <Comment.Content data={item} hasDescription="content" />
+              </Comment.Root>
             ))}
           </div>
         </div>
@@ -34,12 +37,9 @@ export function Home() {
         <div className="h-[calc(100vh-6.25rem)] overflow-x-hidden custom-scrollbar rounded-md">
           <div className="flex flex-col gap-4 last:mb-4">
             {DataPost.map((item) => (
-              <Comment
-                hasHeader={false}
-                isCardBook
-                data={item}
-                key={window.crypto.randomUUID()}
-              />
+              <Comment.Root key={window.crypto.randomUUID()}>
+                <Comment.Content data={item} hasRating />
+              </Comment.Root>
             ))}
           </div>
         </div>

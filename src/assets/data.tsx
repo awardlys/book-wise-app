@@ -1,5 +1,7 @@
+import img from "./book.png";
 export interface DataPostProps {
   user: string;
+  imgBook?: string;
   imgUser: string;
   dateUp: string;
   title: string;
@@ -9,6 +11,7 @@ export interface DataPostProps {
 export const DataPost: DataPostProps[] = [
   {
     user: "Jaxson Dias",
+    imgBook: img,
     imgUser: "https://github.com/shadcn.png",
     dateUp: "2023-07-15",
     title: "O Hobbit",
@@ -18,6 +21,7 @@ export const DataPost: DataPostProps[] = [
   },
   {
     user: "Jaxson Dias",
+    imgBook: img,
     imgUser: "https://github.com/shadcn.png",
     dateUp: "2023-07-15",
     title: "O Hobbit",
@@ -27,6 +31,7 @@ export const DataPost: DataPostProps[] = [
   },
   {
     user: "Jaxson Dias",
+    imgBook: img,
     imgUser: "https://github.com/shadcn.png",
     dateUp: "2023-07-15",
     title: "O Hobbit",
@@ -36,6 +41,7 @@ export const DataPost: DataPostProps[] = [
   },
   {
     user: "Jaxson Dias",
+    imgBook: img,
     imgUser: "https://github.com/shadcn.png",
     dateUp: "2023-07-15",
     title: "O Hobbit",
