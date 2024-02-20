@@ -1,5 +1,6 @@
 import { GoGraph } from "react-icons/go";
 import { LuLogIn } from "react-icons/lu";
+import { PiBinocularsFill } from "react-icons/pi";
 import { useLocation } from "react-router-dom";
 import { Logo } from "../logo";
 import { Button } from "../ui/button";
@@ -22,7 +23,7 @@ export function Sidebar() {
             to={"/explorer"}
             name="Explorer"
             current={pathname}
-            icon={GoGraph}
+            icon={PiBinocularsFill}
           />
         </div>
       </div>
