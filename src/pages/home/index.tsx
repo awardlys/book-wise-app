@@ -1,8 +1,9 @@
-import { DataPost } from "@/assets/data";
+import { books } from "@/assets/constants/books";
 import { Comment } from "@/components/comment";
 import { GoGraph } from "react-icons/go";
 import { SlArrowRight } from "react-icons/sl";
 import { Link } from "react-router-dom";
+import { users } from "../../assets/constants/users";
 
 export function Home() {
   return (
@@ -15,9 +16,9 @@ export function Home() {
         <p className="text-sm mb-2 select-none">Avaliações mais recentes</p>
         <div className="h-[calc(100vh-8rem)] overflow-x-hidden custom-scrollbar rounded-md">
           <div className="flex flex-col gap-4">
-            {DataPost.map((item) => (
-              <Comment.Root key={window.crypto.randomUUID()}>
-                <Comment.Header data={item} hasRating />
+            {books.map((item) => (
+              <Comment.Root key={crypto.randomUUID()}>
+                <Comment.Header users={users[0]} hasRating />
                 <Comment.Content data={item} hasDescription="content" />
               </Comment.Root>
             ))}
@@ -36,7 +37,7 @@ export function Home() {
         </div>
         <div className="h-[calc(100vh-6.25rem)] overflow-x-hidden custom-scrollbar rounded-md">
           <div className="flex flex-col gap-4 last:mb-4">
-            {DataPost.map((item) => (
+            {books.map((item) => (
               <Comment.Root key={window.crypto.randomUUID()}>
                 <Comment.Content data={item} hasRating />
               </Comment.Root>

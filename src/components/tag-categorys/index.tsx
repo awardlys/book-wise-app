@@ -14,7 +14,7 @@ export function TagCategory({
     <span
       {...props}
       data-isActive={isActive}
-      className="py-1 px-4 rounded-full border-violet-500 border-2 border-solid data-[isActive=true]:bg-violet-400"
+      className="py-1 px-4 text-xs text-center rounded-full border-violet-500 border-2 border-solid data-[isActive=true]:bg-violet-500 cursor-pointer select-none"
     >
       {name}
     </span>

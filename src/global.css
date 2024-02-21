@@ -90,3 +90,7 @@
 .custom-scrollbar::-webkit-scrollbar {
   width: 0;
 }
+.card-explorer {
+  @apply grid gap-4;
+  grid-template-columns: repeat(auto-fit, minmax(min(11.25rem, 180%), 1fr));
+}
